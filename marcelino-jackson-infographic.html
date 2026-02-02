@@ -538,6 +538,32 @@
     }
 
 
+    .built-with {
+      position: absolute;
+      left: 50%;
+      bottom: 3mm;
+      transform: translateX(-50%);
+      font-size: 9px;
+      color: var(--dim);
+      letter-spacing: 0.02em;
+    }
+
+    .built-with a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px dotted var(--stroke2);
+    }
+
+    .built-with a:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .built-strong {
+      color: var(--text);
+      font-weight: 700;
+    }
+
     .clearance-badge {
       text-align: center;
       padding: 6px 16px;
@@ -944,6 +970,11 @@
         <span class="principle">Today Matters</span>
       </div>
     </section>
+
+
+    <div class="built-with">
+      Built with <strong><span class="built-strong">HTML</span></strong>, <strong><span class="built-strong">CSS</span></strong>, and <a href="https://fonts.google.com/specimen/Inter" target="_blank" rel="noreferrer"><strong><span class="built-strong">Google Fonts</span></strong></a>
+    </div>
 
   </main>
 </body>
